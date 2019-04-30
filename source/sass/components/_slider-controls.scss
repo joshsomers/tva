@@ -1,0 +1,16 @@
+.flickity-viewport{
+}
+button.flickity-prev-next-button{
+	background:none;
+	@include t1;
+	.arrow{
+		fill:rgba($white,.3);
+		@include t1;
+	}
+	&:hover, &:focus {
+		background:rgba($white,.1);
+		.arrow{
+			fill:$white;
+		}
+	}
+}

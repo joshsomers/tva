@@ -1,0 +1,22 @@
+$generalpadding: 90px;
+$devicepadding: 50px 10px;
+
+section, footer{
+	padding:$generalpadding 0;
+	position:relative;
+	@include bp(sm) {
+		padding:$devicepadding;
+	}
+}
+
+html, body {
+	height:100%;
+	::selection{
+		background:black;
+		color:$pri;
+	}
+}
+
+#main{
+	height:100%;
+}

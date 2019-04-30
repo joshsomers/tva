@@ -1,0 +1,17 @@
+{
+	"name": "dev",
+	"authors": [
+		"Josh Somers <josh@anglestudios.co.uk>"
+	],
+	"description": "Angle Dev Framework",
+	"main": "",
+	"license": "MIT",
+	"homepage": "index",
+	"private": true,
+	"dependencies": {
+		"jquery": "^3.2.1",
+		"bootstrap-sass": "^3.3.7",
+		"matchHeight": "matchheight#^0.7.2",
+		"Ionicons": "ionicons#^2.0.1"
+	}
+}

@@ -1,0 +1,186 @@
+// Border radius
+@mixin br {
+	border-radius: 4px;
+}
+
+// Titles
+.title {
+	padding-bottom:40px;
+}
+
+// Flex
+.flex {
+	display:flex;
+}
+
+// Border Top
+.border {
+	&::before {
+		@include pseudo;
+		width: 100%;
+		max-width: 1100px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 1px;
+		background: $grey;
+	}
+	&-top {
+		&::before {
+			@extend .border;
+			top: 0;
+		}
+	}
+	&-bot {
+		&::before {
+			@extend .border;
+			bottom: 0;
+		}
+	}
+}
+
+// Border Bottom
+.border-bot {
+	&::before {
+		@include pseudo;
+		width: 100%;
+		max-width: 1100px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 0;
+		height: 1px;
+		background: $grey;
+	}
+}
+
+// Paddings
+.pad-30 {
+	padding: 30px;
+}
+
+.pad-50 {
+	padding: 50px;
+}
+
+.vpad-50 {
+	padding-top: 50px;
+	padding-bottom:50px;
+}
+
+.vpad-80 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+// Margins
+.bot-30 {
+	margin-bottom:30px;
+}
+.top-30{
+	margin-top:30px;
+}
+
+// Column spacing
+.m-space > [class*='col-'] {
+	padding-bottom: 40px;
+	padding-top:0px;
+	&:last-child {
+		padding-bottom: 0;
+	}
+	@include bp(sm) {
+		padding-top: 0;
+		padding-bottom: 25px;
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+	@include bp(xs) {
+		padding-bottom: 25apx;
+		padding-top: 0;
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+}
+
+// Remove section padding
+.no-pad {
+	padding: 0;
+}
+
+.no-pad-top {
+	padding-top: 0;
+}
+
+// Alignments
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.mid-content {
+	.hold--surround {
+		height: 100%;
+		@include bp(sm) {
+			height: auto;
+		}
+	}
+	.hold--place {
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		@include bp(sm) {
+			display: block;
+		}
+	}
+}
+
+// Heights and widths
+.h-full {
+	height: 100%;
+}
+
+.h-800 {
+	height: 800px;
+}
+
+.w-full {
+	width: 100%;
+}
+
+.vh-full {
+	height: 100vh;
+}
+
+// Full width image
+.img-fw {
+	img {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+// Vertical alignments
+.start {
+	align-self: flex-start;
+}
+
+.middle {
+	align-self: center;
+}
+
+.end {
+	align-self: flex-end;
+}
+
+.clearfix{
+	@include clearfix();
+}

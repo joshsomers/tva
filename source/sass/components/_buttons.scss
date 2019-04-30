@@ -1,0 +1,38 @@
+.btn{
+	padding:10px 35px;
+	background:$pri;
+	color:$dark;
+	display: inline-block;
+	box-shadow:none;
+	border:none;
+	text-transform: uppercase;
+	font-weight:500;
+	font-size:12px;
+	letter-spacing:1px;
+	line-height:19px;
+	border-radius:100px;
+	&:hover{
+		background:darken($pri,10%);
+		color:$dark;
+	}
+	&-g{
+		@extend .btn;
+		background:$grey;
+		color:$white;
+		&:hover{
+			background:$pri;
+			color:$dark;
+		}
+	}
+	&-w{
+		@extend .btn;
+		background:$white;
+		color:$dark;
+		border:2px solid transparent;
+		&:hover{
+			background:none;
+			border:2px solid $white;
+			color:$white;
+		}
+	}
+}

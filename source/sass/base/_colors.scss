@@ -1,0 +1,54 @@
+// ------------------------------------
+// Define Colours
+// ------------------------------------
+$color: (
+	'primary': #AF8E6D, 
+	'accent': #AF8E6D,
+	'secondary': #AF8E6D,
+	'grey': #3E3E3E,
+	'dark': #000
+	);
+
+// ------------------------------------
+// Colour Variables
+// ------------------------------------
+$pri: color('primary');
+$pri-l: mix(white, $pri, 20%);
+$pri-d: mix(black, $pri, 20%);
+
+$sec: color('secondary');
+$sec-l: mix(white, $sec, 20%);
+$sec-d: mix(black, $sec, 20%);
+
+$acc: color('accent');
+$acc-l: mix(white, $acc, 20%);
+$acc-d: mix(black, $acc, 20%);
+
+$grey: color('grey');
+$grey-l: mix(white, $grey, 20%);
+$grey-d: mix(black, $grey, 20%);
+
+$dark: color('dark');
+$dark-l: mix(white, $dark, 20%);
+$dark-d: mix(black, $dark, 20%);
+
+$white: white;
+
+.bg-dark {
+	background:$dark;
+}
+.bg-grey {
+	background:$grey;
+}
+.bg-sec {
+	background:$sec;
+}
+.bg-acc {
+	background:$acc;
+}
+.bg-pri {
+	background:$pri;
+}
+.bg-white {
+	background:$white;
+}

@@ -1,0 +1,31 @@
+header{
+	// Homepage Slider
+	&#hero-slider{
+		height:770px;
+		width:100%;
+		position: relative;
+		.slide{
+			height:100%;
+			width:100%;
+			background-size:cover;
+			background-position:center;
+			.container,.row{
+				height:100%;
+			}
+			.row{
+				display:flex;
+			}
+			.slide-title{
+				p{
+					&.h6{
+						color:rgba($white,.5);
+					}
+					&.slide-info{
+						color:rgba($white,.5);
+						font-size:18px;
+					}
+				}
+			}
+		}
+	}
+}
